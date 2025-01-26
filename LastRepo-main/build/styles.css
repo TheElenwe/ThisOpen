@@ -76,56 +76,62 @@ nav {
     max-height: 900px;
     margin: 100px auto 0;
     width: 92%;
-    border-radius: 0;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
-                url('pexels-heyho-6438762.jpg');
+    background: url('pexels-heyho-6438762.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
-    padding-left: 80px;
-    color: white;
+    align-items: flex-end;
+    padding: 40px;
     position: relative;
-    /* min-width: 1400px; */
 }
 
 .hero-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    width: 100%;
     position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    z-index: 2;
 }
 
 .hero-content h1 {
-    font-size: 82px;
-    margin-bottom: 24px;
+    position: absolute;
+    top: -120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 120px;
     color: white;
+    width: auto;
+    text-align: center;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .info-box {
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
     padding: 24px;
     border-radius: 16px;
-    max-width: 400px;
-    margin-bottom: 24px;
+    width: 380px;
+    margin-bottom: 0;
 }
 
 .info-box p {
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
 
 .preview-box {
-    position: absolute;
-    left: 420px;
-    bottom: 40px;
-    width: 200px;
-    height: 120px;
+    width: 400px;
+    height: 200px;
     border-radius: 12px;
     overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
 }
 
 .preview-box img {
@@ -151,39 +157,42 @@ nav {
 }
 
 .rotating-badge {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    animation: rotate 20s linear infinite;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    margin-left: auto;
 }
 
 .rotating-badge span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    font-size: 14px;
+    font-size: 12px;
+    animation: rotate 20s linear infinite;
 }
 
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 .cta-button {
     padding: 12px 24px;
-    border: 1px solid white;
-    background: transparent;
+    background: black;
     color: white;
+    border: none;
     border-radius: 25px;
     cursor: pointer;
+    font-size: 14px;
     transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background: white;
-    color: black;
+    background: #333;
 }
 
 /* Modern Section */
