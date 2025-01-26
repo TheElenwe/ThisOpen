@@ -75,6 +75,7 @@ nav {
     min-height: 600px;
     max-height: 900px;
     margin: 100px auto 0;
+    
     width: 92%;
     background: url('pexels-heyho-6438762.jpg');
     background-size: cover;
@@ -124,8 +125,14 @@ nav {
     line-height: 1.6;
     margin-bottom: 20px;
 }
+/* .bordRadius{
+ width:100%;
+ height:100%;
+} */
+
 
 .preview-box {
+    
     width: 400px;
     height: 200px;
     border-radius: 12px;
@@ -613,7 +620,9 @@ footer {
 .image-container2 {
     width:100%;
   
+  
     height:55vh;
+  
     /* height:700px; */
    
   /* height:600px; */
