@@ -7,6 +7,7 @@
 }
 
 body {
+   
     margin: 0;
     padding: 0;
     width: 100%;
@@ -958,7 +959,11 @@ footer {
 
 /* Στυλ για το δεύτερο text-overlay */
 .image-container2 .text-overlay {
+    position: absolute;
+    top: 50px;
+    left: 24px;
     color: white;
+    z-index: 2;
 }
 
 .image-container2 .text-overlay .tag {
